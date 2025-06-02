@@ -44,14 +44,14 @@ foreground = #C5C8C6
 
 primary = #F0C674
 
-secondary = #8ABEB7
+#8ABEB7
 
 alert = #A54242
 
 disabled = #707880
 
 
-[bar/example]
+[bar/bottom]
 
 width = 100%
 
@@ -59,6 +59,9 @@ height = 24pt
 
 radius = 6
 
+bottom = true
+
+offset-x = 2
 
 ; dpi = 96
 
