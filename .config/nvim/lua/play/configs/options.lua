@@ -1,14 +1,24 @@
+function MYcolor()
+	vim.cmd.colorscheme("habamax")
 
+	vim.cmd([[
+  highlight Normal guibg=none
+  highlight NonText guibg=none
+  highlight Normal ctermbg=none
+  highlight NonText ctermbg=none
+  highlight StatusLine guibg=#000000 guifg=#fffff
+]])
+end
 
-vim.o.mouse = 'a'
+MYcolor()
 
+vim.o.mouse = "a"
 
 -- Enable break indent
 vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-
 
 -- tabs & indentation
 vim.opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
@@ -24,9 +34,8 @@ vim.o.smartcase = true
 vim.o.splitright = true
 vim.o.splitbelow = true
 
-
 vim.opt.relativenumber = true
 
-vim.schedule(function() 
+vim.schedule(function()
 	vim.o.clipboard = "unnamedplus"
 end)
