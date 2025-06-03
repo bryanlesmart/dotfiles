@@ -10,8 +10,7 @@ foreground = #C5C8C6
 
 primary = #F0C674
 
-secondary = #8ABEB7
-
+secondary = #000000
 alert = #A54242
 
 disabled = #707880
