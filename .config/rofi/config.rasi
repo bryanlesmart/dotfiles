@@ -1,0 +1,14 @@
+configuration {               
+    modes: "window,run,ssh,drun";
+    font: "JetBrainMono Nerd Font 12";
+    ml-row-down: "ScrollDown";  
+    display-drun: "Application";
+    drun-display-format: "{icon} {name}";
+ 
+/*  me-select-entry: "MousePrimary";*/                                                                                  
+/*  me-accept-entry: "MouseDPrimary";*/                                                                                 
+/*  me-accept-custom: "Control+MouseDPrimary";*/ 
+}
+
+
+@theme  "~/.config/rofi/Ark-Dark.rasi"
