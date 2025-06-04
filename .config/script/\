@@ -6,7 +6,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-DOTFILES_DIR="$HOME/.dotfiles/.config"
+DOTFILES_DIR="$HOME/.dotfiles"
 CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/backup_files/.dotifiles_backup_$(date +%Y%m%d_%H%M%S)"
 REPO_URL="https://github.com/bryanlesmart/dotfiles.git"
@@ -126,7 +126,17 @@ setup_dotfiles() {
     }
     cd -
   fi
-  DOTFILES=(ghostty i3 git nvim ohmyposh picom polybar rofi script tmux)
+
+  if [[ ! -d "$CONFIG_DIR" ]]; then
+    echo "ECHOOOOOO"
+	  print_msg "Creating $CONFIG_DIR..."
+    mkdir -p "$CONFIG_DIR" || {
+      print_error "Failed to create $CONFIG_DIR" 
+      exit 1
+    }
+  fi 
+
+  DOTFILES=(ghostty git i3 nvim ohmyposh picom polybar rofi script tmux)
 
   for item in "${DOTFILES[@]}"; do
       if [[ "$item" == "zsh" ]]; then 
@@ -146,14 +156,19 @@ setup_dotfiles() {
         }
       fi
   done
-  if [[ -d "$CONFIG_DIR" ]]; then 
-  	print_msg "Creating $CONFIG_DIR..."
-	mkdir -p "$CONFIG_DIR"
-  fi
-
   cd "$DOTFILES_DIR"
-  for item in "${DOTFILES[@]}"; do
-    echo "$DOTFILES_DIR $HOME $item"
+  echo "DEBUG $DOTFILES_DIR"
+  for item in "${DOTFILES[@]}"; do 
+  	if [[ -d "$item" || -f "$item" ]]; then
+       print_msg "Stowing $item..."
+	     stow -d "$DOTFILES_DIR" -t "$HOME" "$item" || {
+		   print_error "Failed to stow $item"
+	      	exit 1
+	    }
+    else
+	      print_error "Source $item does not exist in $DOTFILES_DIR"
+	      exit 1
+	fi
   done
   cd -
   if [[ -L "$HOME/.zshrc" && -f "$HOME/.zshrc" ]]; then
