@@ -153,7 +153,7 @@ setup_dotfiles() {
 
   cd "$DOTFILES_DIR"
   for item in "${DOTFILES[@]}"; do
-    echo "$DOTFILES_DIR $HOME $item"
+    echo "$DOTFILES_DIR $CONFIG_DIR $item"
   done
   cd -
   if [[ -L "$HOME/.zshrc" && -f "$HOME/.zshrc" ]]; then
