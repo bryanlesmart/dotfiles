@@ -1,16 +1,15 @@
-function MYcolor()
+function MyColor()
 	vim.cmd.colorscheme("habamax")
-
 	vim.cmd([[
-  highlight Normal guibg=none
-  highlight NonText guibg=none
-  highlight Normal ctermbg=none
-  highlight NonText ctermbg=none
-  highlight StatusLine guibg=#000000 guifg=#fffff
-]])
+	  highlight Normal guibg=none
+	  highlight NonText guibg=none
+	  highlight Normal ctermbg=none
+	  highlight NonText ctermbg=none
+	  highlight StatusLine guibg=#000000 guifg=#fffff
+	]])
 end
 
-MYcolor()
+MyColor()
 
 vim.o.mouse = "a"
 
