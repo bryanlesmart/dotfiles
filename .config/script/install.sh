@@ -6,7 +6,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-DOTFILES_DIR="$HOME/.dotfiles/.config"
+DOTFILES_DIR="$HOME/.dotfiles"
 CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/backup_files/.dotifiles_backup_$(date +%Y%m%d_%H%M%S)"
 REPO_URL="https://github.com/bryanlesmart/dotfiles.git"
@@ -96,7 +96,7 @@ setup_zsh() {
     fi
   else 
     
-    print_msg "Zsh aleady defualt shell"
+    print_msg "Zsh aleady default shell"
   fi
 }
 
@@ -146,15 +146,14 @@ setup_dotfiles() {
         }
       fi
   done
-  if [[ -d "$CONFIG_DIR" ]]; then 
-  	print_msg "Creating $CONFIG_DIR..."
-	mkdir -p "$CONFIG_DIR"
-  fi
-
   cd "$DOTFILES_DIR"
-  for item in "${DOTFILES[@]}"; do
-    echo "$DOTFILES_DIR $CONFIG_DIR $item"
-  done
+    for item in "${DOTFILES[@]}"; do
+        stow  --adopt . || {
+            print_error "Failed to stow $item"
+            exit 1   
+        }
+        print_msg "Succesfully stowing $item"
+    done 
   cd -
   if [[ -L "$HOME/.zshrc" && -f "$HOME/.zshrc" ]]; then
 	print_msg "Sourcing zshrc..."
