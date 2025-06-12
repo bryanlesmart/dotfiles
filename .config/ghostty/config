@@ -1,6 +1,6 @@
 
 #config
-font-family = JetBrainsMono Nerd Font
+font-family = CaskaydiaCoveNerdFontMono 
 font-size = 15
 theme = GruvboxDarkHard
 shell-integration-features = no-cursor,sudo,no-title
