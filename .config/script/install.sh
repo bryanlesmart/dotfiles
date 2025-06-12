@@ -11,7 +11,7 @@ CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/backup_files/.dotifiles_backup_$(date +%Y%m%d_%H%M%S)"
 REPO_URL="https://github.com/bryanlesmart/dotfiles.git"
 YAY_DIR="$HOME/yay-bin"
-PKGS=(bat zsh git neovim xclip ghostty stow picom)
+PKGS=(bat zsh git pavucontrol nautilus neovim xclip ghostty stow picom feh fzf ripgrep blueberry zoxide polybar tmux)
 AUR_PKGS=(oh-my-posh)
 
 print_msg() {
