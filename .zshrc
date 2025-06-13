@@ -13,8 +13,8 @@ source "${ZINIT_HOME}/zinit.zsh"
 
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
-zinit light zsh-users/zsh-completions
-zinit light zsh-users/zsh-autosuggestions
+# zinit light zsh-users/zsh-completions
+# zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # Add in snippets
@@ -69,3 +69,5 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/base.omp.json)"
 
 source $HOME/.cargo/bin
 
+
+. "$HOME/.local/bin/env"

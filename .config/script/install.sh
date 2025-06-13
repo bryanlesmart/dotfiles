@@ -6,12 +6,13 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
+
 DOTFILES_DIR="$HOME/.dotfiles"
 CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/backup_files/.dotifiles_backup_$(date +%Y%m%d_%H%M%S)"
 REPO_URL="https://github.com/bryanlesmart/dotfiles.git"
 YAY_DIR="$HOME/yay-bin"
-PKGS=(bat zsh git eza fd luarocks lua51 pavucontrol nautilus neovim xclip ghostty stow picom feh fzf ripgrep blueberry zoxide polybar tmux)
+PKGS=(bat zsh yazi 7zip jq poppler imagemagick resvg git eza fd luarocks lua51 pavucontrol nautilus neovim xclip ghostty stow picom feh fzf ripgrep blueberry zoxide polybar tmux)
 AUR_PKGS=(oh-my-posh)
 
 print_msg() {

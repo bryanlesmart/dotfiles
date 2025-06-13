@@ -1,5 +1,5 @@
 function MyColor()
-	vim.cmd.colorscheme("habamax")
+	vim.cmd.colorscheme("slate")
 	vim.cmd([[
 	  highlight Normal guibg=none
 	  highlight NonText guibg=none
