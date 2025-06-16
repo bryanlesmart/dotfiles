@@ -3,9 +3,10 @@
 # font-family = CaskaydiaCoveNerdFontMono 
 # font-family =  Iosevka Nerd Font Propo
 # font-family = Monaspace Neon
-font-family = CaskaydiaCove Nerd Font Mono
+# font-family = Adwaita Sans
+# font-family = CaskaydiaCove Nerd Font Mono
 # font-family = Monaspace Neon Xeon
-font-size = 16
+font-size = 14
 theme = GruvboxDarkHard
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block

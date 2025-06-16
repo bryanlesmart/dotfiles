@@ -1,12 +1,12 @@
 function MyColor()
-	vim.cmd.colorscheme("slate")
-	vim.cmd([[
-	  highlight Normal guibg=none
-	  highlight NonText guibg=none
-	  highlight Normal ctermbg=none
-	  highlight NonText ctermbg=none
-	  highlight StatusLine guibg=#000000 guifg=#fffff
-	]])
+	vim.cmd.colorscheme("habamax")
+	vim.cmd.hi("Normal guibg=none")
+	vim.cmd.hi("NonText guibg=none")
+	vim.cmd.hi("Structure guifg=#ffff00")
+	vim.cmd.hi("Constant guifg=#FFD0C7")
+	vim.cmd.hi("Normal ctermbg=none")
+	vim.cmd.hi("NonText ctermbg=none")
+	vim.cmd.hi("StatusLine guibg=#0101010 guifg=#fffff")
 end
 
 MyColor()
