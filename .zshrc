@@ -62,7 +62,7 @@ alias ls='eza --color=always --no-time --long'
 alias v='nvim'
 alias lg="lazygit"
 alias cls='clear'
-alias hx='helix'
+alias t="tmux"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
