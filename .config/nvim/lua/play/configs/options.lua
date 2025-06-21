@@ -1,20 +1,3 @@
-function MyColor()
-	vim.cmd.colorscheme("retrobox")
-
-	-- vim.cmd.hi("Include guifg=#fffff")
-	-- vim.cmd.hi("Define guifg=#fffff")
-	-- vim.cmd.hi("Macro guifg=#fffff")
-	-- vim.cmd.hi("PreCondit guifg=#fffff")
-	-- vim.cmd.hi("Structure guifg=#fffff")
-	-- vim.cmd.hi("@string.regexp guifg=#fffff")
-	-- vim.cmd.hi("@string.escape. guifg=#fffff")
-	-- vim.cmd.hi("@string.string guifg=#fffff")
-	-- vim.cmd.hi("DiffAdd guifg=#fffff")
-	-- vim.cmd.hi("@string guifg=#789978")
-end
-
-MyColor()
-
 vim.o.mouse = "a"
 
 -- Enable break indent
@@ -22,7 +5,7 @@ vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
-
+vim.opt.number = true
 -- tabs & indentation
 vim.opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
 vim.opt.shiftwidth = 2 -- 2 spaces for indent width
