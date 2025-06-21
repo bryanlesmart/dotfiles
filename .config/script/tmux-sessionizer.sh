@@ -2,7 +2,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/dev/ ~/.config -mindepth 1 -maxdepth 1 -type d | \
+    selected=$(find ~/dev/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | \
         sed "s|^$HOME/||" | \
         fzf --margin 10% --color="bw" 
     )

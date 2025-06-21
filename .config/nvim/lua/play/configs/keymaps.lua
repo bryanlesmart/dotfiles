@@ -3,7 +3,6 @@ local keymap = vim.keymap
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
 keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
-
 -- Diagnostic keymaps
 keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
