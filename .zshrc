@@ -59,7 +59,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='eza --color=always --no-time --long'
-alias vim='nvim'
+alias v='nvim'
+alias lg="lazygit"
 alias cls='clear'
 alias hx='helix'
 # Shell integrations

@@ -12,8 +12,8 @@ CONFIG_DIR="$HOME/.config"
 BACKUP_DIR="$HOME/backup_files/.dotifiles_backup_$(date +%Y%m%d_%H%M%S)"
 REPO_URL="https://github.com/bryanlesmart/dotfiles.git"
 YAY_DIR="$HOME/yay-bin"
-PKGS=(bat zsh yazi 7zip jq poppler imagemagick resvg git eza fd luarocks lua51 pavucontrol nautilus neovim xclip ghostty stow picom feh fzf ripgrep blueberry zoxide polybar tmux)
-AUR_PKGS=(oh-my-posh, brave-bin)
+PKGS=(bat lazygit zsh yazi 7zip jq poppler imagemagick resvg git eza fd luarocks lua51 pavucontrol nautilus neovim xclip ghostty stow picom feh fzf ripgrep blueberry zoxide polybar tmux)
+AUR_PKGS=(oh-my-posh, brave-bin obsidian)
 
 print_msg() {
     echo -e "${GREEN}[INFO]${NC} $1"
