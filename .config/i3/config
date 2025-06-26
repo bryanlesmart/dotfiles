@@ -200,6 +200,3 @@ gaps outer 3
 
 #Polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
-
-
-# bindsym $mod+u exec --no-startup-id ghostty -e zsh -ic 'RUN_SESSIONIZER_ON_START=1 zsh'
