@@ -30,3 +30,8 @@ local ui = {
 		lazy = "💤 ",
 	},
 }
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+	pattern = "*view.php",
+	command = "set filetype=html",
+})

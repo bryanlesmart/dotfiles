@@ -2,10 +2,9 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/dev/ ~/.config/ -mindepth 1 -maxdepth 1 -type d | \
+    selected=$(find ~/personal ~/.config/ -mindepth 1 -maxdepth 1 -type d | \
         sed "s|^$HOME/||" | \
-        fzf --margin 10% --color="bw" 
-    )
+        fzf )
     # Add home path back
     if [[ -n "$selected" ]]; then
         selected="$HOME/$selected"

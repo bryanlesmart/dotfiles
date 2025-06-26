@@ -1,5 +1,4 @@
 vim.o.mouse = "a"
-
 -- Enable break indent
 vim.o.breakindent = true
 
