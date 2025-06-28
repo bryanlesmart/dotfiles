@@ -17,9 +17,8 @@ vim.o.smartcase = true
 -- Configure how new splits should be opened
 vim.o.splitright = true
 vim.o.splitbelow = true
-
+vim.o.termguicolors = true
 vim.opt.relativenumber = true
-
 vim.schedule(function()
 	vim.o.clipboard = "unnamedplus"
 end)

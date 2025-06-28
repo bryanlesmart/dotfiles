@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-PROJECTS_DIR="$HOME/personal/"
+PROJECTS_DIR="$HOME/personal"  
 
 cd "$PROJECTS_DIR" || exit 1
 DIR=$(find . -maxdepth 1 -type d -not -name '.' | sed 's|^\./||' | fzf)

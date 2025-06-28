@@ -37,18 +37,6 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
-# function tmux_sessionizer_widget() {
-#   # Run your sessionizer script
-#   ~/.config/i3/run.sh
-#   zle reset-prompt
-# }
-#
-# # Register it as a Zsh widget
-# zle -N tmux_sessionizer_widget
-#
-# # Bind it to Ctrl-F
-# bindkey '^F' tmux_sessionizer_widget
-#
 
 # History
 HISTSIZE=5000

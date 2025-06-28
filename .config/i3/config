@@ -200,3 +200,7 @@ gaps outer 3
 
 #Polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
+
+
+
+
