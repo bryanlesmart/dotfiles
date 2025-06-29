@@ -37,5 +37,5 @@ copy-on-select = clipboard
 
 # keybindings
 keybind = ctrl+r=reload_config
-keybind = ctrl+f=text:~/.config/i3/run.sh
+keybind = ctrl+f=text:~/.config/i3/run.sh\n
 
